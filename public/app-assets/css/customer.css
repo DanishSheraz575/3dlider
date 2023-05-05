@@ -1,0 +1,160 @@
+#timeline.timeline-left .timeline-item > .timeline-badge {
+    top:0px !important;
+}
+.gradientpomegranate {
+    background-image: linear-gradient(40deg, #150d43, #d76bd2) !important;
+    background-repeat: repeat-x !important; }
+.card.status{
+    background: rgba(0, 0, 0, 0.4);
+}
+.card-2:active{
+    transform:rotate3d(1,1,1,360deg);
+    transition: transform 1s;
+}
+.main-content .wizard > .actions > ul > li > a[href="#previous"] {
+    background-color: #154546;
+}
+.profile-section .profile-menu {
+    padding-left:0px !important;
+}
+.main-content .wizard > .actions {
+    display:none;
+}
+h2{
+    color: #009DA0;
+}
+#form {
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+.finish {
+    text-align: center
+}
+#form fieldset:not(:first-of-type) {
+    display: none
+}
+#form .previous-status, .next-status {
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    cursor: pointer;
+    padding: 8px 8px;
+    margin: 0px 8px 0px 0px;
+    float: right;
+    border-radius: 3px;
+}
+.form, .previous-status {
+    background: grey;
+}
+.form, .next-status {
+    background: #009DA0;
+}
+#form .previous-status:hover,
+#form .previous-status:focus {
+    background-color: lightslategrey;
+}
+#form .next-status:hover,
+#form .next-status:focus {
+    background-color: #0ae7ea
+}
+.text {
+    color: #009DA0;
+    font-weight: normal
+}
+#progressbar {
+    margin-bottom: -15px;
+    overflow: hidden;
+    color: lightgrey
+}
+#progressbar .active {
+    color: #009DA0
+}
+#progressbar li {
+    list-style-type: none;
+    font-size: 14px;
+    width: 16.6%;
+    float: left;
+    position: relative;
+    font-weight: 400
+}
+#progressbar #step1:before {
+    content: "1";
+}
+#progressbar #step2:before {
+    content: "2"
+}
+#progressbar #step3:before {
+    content: "3"
+}
+#progressbar #step4:before {
+    content: "4"
+}
+#progressbar #step5:before {
+    content: "5"
+}
+#progressbar #step6:before {
+    content: "6"
+}
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 43px;
+    display: block;
+    font-size: 20px;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px;
+    z-index: 1;
+}
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 5px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 23px;
+    z-index: -1
+}
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #009DA0
+}
+.progress {
+    height: 20px
+}
+.progress-bar {
+    background-color: #009DA0
+}
+.chat-application .chats .chat-body .chat-content {
+    text-align:left !important;
+}
+.header {
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    color: white;
+    background-image: linear-gradient(45deg, #009da0, #a5c8d8) !important;
+}
+.pretty .state label:after, .pretty .state label:before {
+    width: calc(1em + 5px);
+    height: calc(1em + 5px);
+    top: calc((0% - (100% - 1em)) - -20%);
+}
+.pretty .state .label:after, .pretty .state .label:before {
+    width: calc(1em + 2px) !important;
+    height: calc(1em + 2px) !important;
+    top: calc((0% - (100% - 1em)) - 8%) !important;
+}
+.remove_insurance_btn{
+    font-size: 10px !important;
+    padding-top: revert !important;
+    padding-left: revert !important;
+    width: 22px;
+    height: 16px;
+    z-index: 1;
+}

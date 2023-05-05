@@ -1,0 +1,35 @@
+.customer_info{
+    margin-left: 55px;
+    margin-top:-20px;
+}
+body{
+    overflow: hidden;
+}
+.chat-application .chat-app-window {
+    height: calc(100% - 190px) !important;
+}
+#message{
+    height: 100px;
+}
+.chat_active{
+    background-color: #bac9ce !important;
+}
+#timeline.timeline-left .timeline-item > .timeline-badge {
+    top:0px;
+}
+#timeline.timeline-left .timeline-item > .timeline-badge {
+    top:0px !important;
+}
+#timeline.timeline-left .timeline-item {
+    padding:0 0 5px 30px !important;
+}
+#comment_edit_btn{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0px;
+    right: 0px;
+}
+.chat-application .chats .chat-body .chat-content {
+    text-align:left !important;
+}
