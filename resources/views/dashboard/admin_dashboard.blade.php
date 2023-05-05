@@ -5,38 +5,17 @@
 @endsection
 @section("content")
     <div class="main-content">
-        <div class="content-wrapper"><!--Statistics cards Starts-->
-
+        <div class="content-wrapper">
+            <!--Statistics cards Starts-->
             <div class="card mt-2 p-3">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-11">
-                                <div class="d-none" id="customer_search_id">
-                                    <form action="javascript:dashboard_customer_report_data_div()" id="generate_customer_report_form_id" >
-                                        @csrf
-                                        <div class="form-group d-flex">
-                                            <input type="text" name="date" id="date_range" class="daterange-cus form-control mb-2 mr-3">
-                                            <button class="btn btn-info btn-sm ">Search</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="col-1 mt-1">
-                                <i class="ft-more-vertical float-right" id="chatOptions" data-toggle="dropdown"
-                                   aria-haspopup="true" aria-expanded="false"></i>
-                                <div class="dropdown-menu" aria-labelledby="chatOptions">
-                                    <a href="#" class="dropdown-item" onclick="show_custom_search();">Custom Search</a>
-                                </div>
-                            </div>
-                        </div>
                         <div id="dashboard_customer_report_data_div">
                             @include('dashboard.partial.customer_stats')
                         </div>
                     </div>
                 </div>
             </div>
-
             <!--Statistics cards Ends-->
             <!--Line with Area Chart 1 Starts-->
             <div class="row">
@@ -128,7 +107,7 @@
     <script src="{{asset('public/app-assets/js/dashboard1.js')}}" type="text/javascript"></script>
     <script>
         // Line with Area Chart 2 Starts
-        var lineArea2 = new Chartist.Line('#line-area2', {
+        let lineArea2 = new Chartist.Line('#line-area2', {
                 labels: {!! $harray !!},
                 series: [
                     {!! $incoming_sms !!},

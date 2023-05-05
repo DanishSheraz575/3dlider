@@ -42,16 +42,15 @@
                         </div>
                     </li>
                     <li class="dropdown nav-item">
-                        <a id="dropdownBasic3" href="#" data-toggle="dropdown" class="nav-link position-relative dropdown-toggle">
+                        <a id="dropdownBasic3" href="#" data-toggle="dropdown"
+                           class="nav-link position-relative dropdown-toggle">
                             <i class="ft-user font-medium-3 blue-grey darken-4"></i>
                             <p class="d-none">User Settings</p></a>
                         <div aria-labelledby="dropdownBasic3" class="dropdown-menu text-left dropdown-menu-right">
-                            <div aria-labelledby="dropdownBasic3" class="dropdown-menu text-left dropdown-menu-right">
-                                <a href="#" class="dropdown-item py-1">
-                                    <i class="ft-edit mr-2"></i><span>My Profile</span>
-                                </a>
-                                <a href="{{route('logout')}}" class="dropdown-item"><i class="ft-power mr-2"></i><span>Logout</span></a>
-                            </div>
+                            <a href="#" class="dropdown-item py-1">
+                                <i class="ft-edit mr-2"></i><span>My Profile</span>
+                            </a>
+                            <a href="{{route('logout')}}" class="dropdown-item"><i class="ft-power mr-2"></i><span>Logout</span></a>
                         </div>
                     </li>
                 </ul>

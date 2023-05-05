@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>RCM CRM - Admin Dashboard</title>
-    {{--Header Scripts--}}
+    {{-- Header Scripts --}}
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
@@ -16,8 +16,6 @@
     <meta name="apple-touch-fullscreen" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900|Montserrat:300,400,500,600,700,800,900" rel="stylesheet">
-    <!-- BEGIN VENDOR CSS-->
-    <!-- font icons-->
     <link rel="stylesheet" type="text/css" href="{{asset('public/app-assets/fonts/feather/style.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('public/app-assets/fonts/simple-line-icons/style.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('public/app-assets/fonts/font-awesome/css/font-awesome.min.css')}}">
@@ -25,10 +23,9 @@
     <link rel="stylesheet" type="text/css" href="{{asset('public/app-assets/vendors/css/prism.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('public/app-assets/vendors/css/chartist.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('public/app-assets/vendors/css/sweetalert2.min.css')}}">
-
-    {{--Header Page Scripts--}}
-    <!-- BEGIN APEX CSS-->
+    {{-- // Header Page Scripts --}}
     @yield("header-scripts")
+    <!-- BEGIN APEX CSS-->
     <link rel="stylesheet" type="text/css" href="{{asset('public/app-assets/css/app.css')}}">
     <style>
         .shortcut:hover{
@@ -62,8 +59,6 @@
         <!-- End : Footer-->
     </div>
 </div>
-<!-- START Notification Sidebar-->
-
 <script src="{{asset('public/app-assets/vendors/js/core/jquery-3.2.1.min.js')}}" type="text/javascript"></script>
 <script src="{{asset('public/app-assets/vendors/js/core/popper.min.js')}}" type="text/javascript"></script>
 <script src="{{asset('public/app-assets/vendors/js/core/bootstrap.min.js')}}" type="text/javascript"></script>
@@ -72,10 +67,6 @@
 <script src="{{asset('public/app-assets/vendors/js/jquery.matchHeight-min.js')}}" type="text/javascript"></script>
 <script src="{{asset('public/app-assets/vendors/js/screenfull.min.js')}}" type="text/javascript"></script>
 <script src="{{asset('public/app-assets/vendors/js/pace/pace.min.js')}}" type="text/javascript"></script>
-<!-- BEGIN VENDOR JS-->
-<!-- BEGIN PAGE VENDOR JS-->
-<!-- END PAGE VENDOR JS-->
-<!-- BEGIN APEX JS-->
 <script src="{{asset('public/app-assets/js/app-sidebar.js')}}" type="text/javascript"></script>
 <script src="{{asset('public/app-assets/vendors/js/moment.min.js')}}" type="text/javascript"></script>
 <script src="{{asset('public/app-assets/vendors/js/sweetalert2.min.js')}}" type="text/javascript"></script>
