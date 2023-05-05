@@ -54,7 +54,7 @@ class DashboardController extends Controller
         $data['is_document_received'] =  12;
         $data['is_credentialing_in_process'] = 11;
         $data['is_credentialed_contracted'] = 36;
-        $data['harray']=$harray;
+        $data['harray']= $harray;
         $data['incoming_sms']=$incoming_sms;
         $data['outgoing_sms']=$outgoing_sms;
         return view('dashboard.user_dashboard',$data);

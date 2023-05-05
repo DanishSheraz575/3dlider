@@ -1,5 +1,4 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,4 +23,15 @@ Route::post('/do_login', 'App\Http\Controllers\UserController@login')->name('do_
 
 Route::middleware(\App\Http\Middleware\EnsureLogin::class)->group(function () {
     Route::get('', 'App\Http\Controllers\DashboardController@index')->name('dashboard');
+
+//    Companies
+    Route::controller(App\Http\Controllers\CompanyController::class)->group(function () {
+        Route::get('/company', 'index')->name('company');
+    });
+
+    //    Staff
+    Route::controller(App\Http\Controllers\StaffController::class)->group(function () {
+        Route::get('/staff', 'index')->name('staff');
+    });
+
 });

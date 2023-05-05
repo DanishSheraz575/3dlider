@@ -1,0 +1,11 @@
+:root {
+    --dark-brown: #840705;
+    --white: #ffffff;
+}
+
+.main_btn {
+    color: white;
+    background-color: var(--dark-brown);
+    padding: 10px 30px;
+    border-radius: 10px;
+}

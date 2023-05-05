@@ -1,6 +1,7 @@
 <!-- main menu-->
 <!--.main-menu(class="#{menuColor} #{menuOpenType}", class=(menuShadow == true ? 'menu-shadow' : ''))-->
-<div data-active-color="white" data-background-color="man-of-steel" data-image="{{asset('public/app-assets/img/sidebar-bg/01.png')}}" class="app-sidebar">
+<div data-active-color="white" data-background-color="man-of-steel"
+     data-image="{{asset('public/app-assets/img/sidebar-bg/01.png')}}" class="app-sidebar">
     <!-- main menu header-->
     <!-- Sidebar Header starts-->
     <div class="sidebar-header">
@@ -20,8 +21,17 @@
     <!-- main menu content-->
     <div class="sidebar-content">
         <div class="nav-container">
-            <ul id="main-menu-navigation" data-menu="menu-navigation" data-scroll-to-active="true" class="navigation navigation-main">
-                <li class="nav-item {{ (request()->is('/')) ? 'active' : '' }}"><a href="{{route('dashboard')}}"><i class="ft-home"></i><span data-i18n="" class="menu-title">Dashboard</span></a>
+            <ul id="main-menu-navigation" data-menu="menu-navigation" data-scroll-to-active="true"
+                class="navigation navigation-main">
+                <li class="nav-item {{ (request()->is('/')) ? 'active' : '' }}"><a href="{{route('dashboard')}}"><i
+                            class="ft-home"></i><span data-i18n="" class="menu-title">Dashboard</span></a>
+                </li>
+                <li class="nav-item {{ (request()->is('company')) ? 'active' : '' }}"><a href="{{route('company')}}">
+                        <i class="fa fa-building-o" aria-hidden="true"></i>
+                        <span data-i18n="" class="menu-title">Company</span></a>
+                </li>
+                <li class="nav-item {{ (request()->is('staff')) ? 'active' : '' }}"><a href="{{route('staff')}}">
+                        <i class="ft-users"></i><span data-i18n="" class="menu-title">Staff Management</span></a>
                 </li>
                 {{--<li class="nav-item {{ (request()->is('customer_list')) ? 'active' : '' }}"><a href="{{route('customer_list')}}"><i class="icon-users"></i><span data-i18n="" class="menu-title">Customers</span><span class="tag badge badge-pill badge-danger float-right mr-1 mt-1" id="customer_unread_count"></span></a>
                 </li>

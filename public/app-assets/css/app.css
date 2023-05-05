@@ -2376,7 +2376,7 @@ input[type="button"].btn-block {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center; }
-  
+
   .btn-group-vertical > .btn,
   .fc .btn-group-vertical > button,
   .btn-group-vertical > .btn-group {
@@ -7542,11 +7542,12 @@ a.text-dark:hover, a.text-dark:focus {
   background-repeat: repeat-x !important; }
 
 .gradient-man-of-steel {
-  background-image: linear-gradient(45deg, #780206, #061161) !important;
+  background-image: linear-gradient(45deg, #840705, #000000) !important;
   background-repeat: repeat-x !important; }
 
 .btn.gradient-man-of-steel:active, .fc button.gradient-man-of-steel:active, .btn.gradient-man-of-steel.active, .fc button.gradient-man-of-steel.active {
-  background-image: linear-gradient(45deg, #780206, #061161) !important;
+  background-image: linear-gradient(45deg, #840705, #000000
+  ) !important;
   background-repeat: repeat-x !important; }
 
 .gradient-shdow-night {
@@ -29303,8 +29304,8 @@ select.form-control {
   padding-top: 0 !important;
   padding-bottom: 0 !important; }
 
-/* 
-TODO:M: To check with latest bootstrap version and remove it. 
+/*
+TODO:M: To check with latest bootstrap version and remove it.
 Bootstrap Enhance */
 .custom-control {
   display: block; }
@@ -29960,7 +29961,7 @@ ngb-accordion .card {
 		position: fixed;
     	z-index: 999;
     	background: $white;
-    	width: 291px;    	
+    	width: 291px;
     	padding: 1rem;
     	fieldset{
     		border-bottom: 1px solid $sideber-border;
@@ -33590,11 +33591,11 @@ datetime .form-group {
       color: #fff; }
   .app-sidebar[data-background-color="man-of-steel"],
   .off-canvas-sidebar[data-background-color="man-of-steel"] {
-    background-image: linear-gradient(45deg, #780206, #061161) !important;
+    background-image: linear-gradient(45deg, #780206, #000000) !important;
     background-repeat: repeat-x !important; }
     .app-sidebar[data-background-color="man-of-steel"] .sidebar-background:after,
     .off-canvas-sidebar[data-background-color="man-of-steel"] .sidebar-background:after {
-      background-image: linear-gradient(45deg, #780206, #061161) !important;
+      background-image: linear-gradient(45deg, #780206, #000000) !important;
       background-repeat: repeat-x !important;
       opacity: 0.9; }
     .app-sidebar[data-background-color="man-of-steel"] .navigation i, .app-sidebar[data-background-color="man-of-steel"] .navigation li > a,
@@ -38080,7 +38081,7 @@ bootstrap table theme
 .lineChart1Shadow {
   -webkit-filter: drop-shadow(0px 20px 6px rgba(0, 0, 0, 0.3));
   filter: drop-shadow(0px 20px 6px rgba(0, 0, 0, 0.3));
-  /* Same syntax as box-shadow, except 
+  /* Same syntax as box-shadow, except
                                                        for the spread property */ }
 
 .lineChart2 .ct-point-circle {
@@ -38100,7 +38101,7 @@ bootstrap table theme
 .shadow {
   -webkit-filter: drop-shadow(0px 25px 8px rgba(0, 0, 0, 0.3));
   filter: drop-shadow(0px 25px 8px rgba(0, 0, 0, 0.3));
-  /* Same syntax as box-shadow, except 
+  /* Same syntax as box-shadow, except
                                                        for the spread property */ }
 
 .ct-grid {
@@ -38176,7 +38177,7 @@ bootstrap table theme
 .lineChartShadow {
   -webkit-filter: drop-shadow(0px 25px 8px rgba(0, 0, 0, 0.3));
   filter: drop-shadow(0px 25px 8px rgba(0, 0, 0, 0.3));
-  /* Same syntax as box-shadow, except 
+  /* Same syntax as box-shadow, except
                                                        for the spread property */ }
 
 .donut .ct-done .ct-slice-donut {
@@ -38216,7 +38217,7 @@ bootstrap table theme
 .BarChartShadow {
   -webkit-filter: drop-shadow(0px 20px 8px rgba(0, 0, 0, 0.3));
   filter: drop-shadow(0px 20px 8px rgba(0, 0, 0, 0.3));
-  /* Same syntax as box-shadow, except 
+  /* Same syntax as box-shadow, except
                                                        for the spread property */ }
 
 .WidgetlineChart .ct-point {
@@ -38232,7 +38233,7 @@ bootstrap table theme
 .WidgetlineChartshadow {
   -webkit-filter: drop-shadow(0px 15px 5px rgba(0, 0, 0, 0.8));
   filter: drop-shadow(0px 15px 5px rgba(0, 0, 0, 0.8));
-  /* Same syntax as box-shadow, except 
+  /* Same syntax as box-shadow, except
                                                        for the spread property */ }
 
 .ct-grid {
@@ -38262,7 +38263,7 @@ bootstrap table theme
 .WidgetlineChart1Shadow {
   -webkit-filter: drop-shadow(0px 20px 5px rgba(0, 0, 0, 0.3));
   filter: drop-shadow(0px 20px 5px rgba(0, 0, 0, 0.3));
-  /* Same syntax as box-shadow, except 
+  /* Same syntax as box-shadow, except
                                                        for the spread property */ }
 
 .WidgetlineChart2 .ct-point {
@@ -38278,7 +38279,7 @@ bootstrap table theme
 .WidgetlineChart2Shadow {
   -webkit-filter: drop-shadow(0px 20px 5px rgba(0, 0, 0, 0.3));
   filter: drop-shadow(0px 20px 5px rgba(0, 0, 0, 0.3));
-  /* Same syntax as box-shadow, except 
+  /* Same syntax as box-shadow, except
                                                        for the spread property */ }
 
 .donut1 .ct-label {
@@ -38355,7 +38356,7 @@ bootstrap table theme
 .lineChart2Shadow {
   -webkit-filter: drop-shadow(0px 25px 8px rgba(0, 0, 0, 0.3));
   filter: drop-shadow(0px 25px 8px rgba(0, 0, 0, 0.3));
-  /* Same syntax as box-shadow, except 
+  /* Same syntax as box-shadow, except
                                                        for the spread property */ }
 
 .lineChart1 .ct-line {
@@ -38368,7 +38369,7 @@ bootstrap table theme
 .lineChart1Shadow {
   -webkit-filter: drop-shadow(0px 20px 6px rgba(0, 0, 0, 0.3));
   filter: drop-shadow(0px 20px 6px rgba(0, 0, 0, 0.3));
-  /* Same syntax as box-shadow, except 
+  /* Same syntax as box-shadow, except
                                                        for the spread property */ }
 
 .range_inputs button {
