@@ -4,190 +4,69 @@
         <div class="content-wrapper">
             <div class="row">
                 <div class="col-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 class="card-title">Add New Staff</h4>
-                        </div>
-                        <div class="card-content">
-                            <div class="card-body">
-                                <div class="card-text">
-                                    <p class="card-text">Fields (*) are required</p>
-                                </div>
-                                <form class="form">
-                                    <div class="form-body">
-                                        <h4 class="form-section mt-3"><i class="ft-user"></i> Personal information</h4>
-                                        <div class="row">
-                                            <div class="col-md-8">
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <h5>Name <span class="required">*</span></h5>
-                                                            <div class="controls">
-                                                                <input type="text" name="text" class="form-control"
-                                                                       required=""
-                                                                       data-validation-required-message="This field is required">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <h5>Last Name <span class="required">*</span></h5>
-                                                            <div class="controls">
-                                                                <input type="text" name="text" class="form-control"
-                                                                       required=""
-                                                                       data-validation-required-message="This field is required">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <h5>Identity Cell <span class="required">*</span></h5>
-                                                            <div class="controls">
-                                                                <input type="number" name="text" class="form-control"
-                                                                       required=""
-                                                                       data-validation-required-message="This field is required">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <h5>Issued In <span class="required">*</span></h5>
-                                                            <div class="controls">
-                                                                <input type="text" name="text" class="form-control"
-                                                                       required=""
-                                                                       data-validation-required-message="This field is required">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <h5>Phone</h5>
-                                                            <div class="controls">
-                                                                <input type="number" name="text" class="form-control">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <h5>Sex <span class="required">*</span></h5>
-                                                            <div class="controls">
-                                                                <select name="country" class="form-control" required
-                                                                        data-validation-required-message="This field is required">
-                                                                    <option readonly selected disabled>Select Sex
-                                                                    </option>
-                                                                    <option>Male</option>
-                                                                    <option>Female</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <h5>Civil Status <span class="required">*</span></h5>
-                                                            <div class="controls">
-                                                                <select name="country" class="form-control" required
-                                                                        data-validation-required-message="This field is required">
-                                                                    <option readonly selected disabled>Select Civil
-                                                                        Status
-                                                                    </option>
-                                                                    <option>Male</option>
-                                                                    <option>Female</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <h5>Is foreign <span class="required">*</span></h5>
-                                                            <div class="controls">
-                                                                <select name="country" class="form-control" required
-                                                                        data-validation-required-message="This field is required">
-                                                                    <option readonly selected disabled>Select</option>
-                                                                    <option>Yes</option>
-                                                                    <option>No</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <h5>Place of Birth <span class="required">*</span></h5>
-                                                            <div class="controls">
-                                                                <input type="text" name="text" class="form-control"
-                                                                       required=""
-                                                                       data-validation-required-message="This field is required">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <h5>Birthdate <span class="required">*</span></h5>
-                                                            <div class="controls">
-                                                                <input type="date" name="text" class="form-control"
-                                                                       required=""
-                                                                       data-validation-required-message="This field is required">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <h5>Nationality <span class="required">*</span></h5>
-                                                            <div class="controls">
-                                                                <select name="country" class="form-control" required
-                                                                        data-validation-required-message="This field is required">
-                                                                    <option readonly selected disabled>Select</option>
-                                                                    <option>Yes</option>
-                                                                    <option>No</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <h5>Profession <span class="required">*</span></h5>
-                                                            <div class="controls">
-                                                                <select name="country" class="form-control" required
-                                                                        data-validation-required-message="This field is required">
-                                                                    <option readonly selected disabled>Select</option>
-                                                                    <option>Yes</option>
-                                                                    <option>No</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <h5>NAU No <span class="required">*</span></h5>
-                                                            <div class="controls">
-                                                                <input type="number" name="text" class="form-control"
-                                                                       required=""
-                                                                       data-validation-required-message="This field is required">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-actions right">
-                                        <button type="submit" class="btn main_btn"> Save Changes</button>
-                                    </div>
-                                </form>
-
-                            </div>
-                        </div>
+                    <div id="step_1" style="display: block">
+                        @include('staff.partial.personal_info')
                     </div>
+                    <div id="step_2" style="display: none">
+                        @include('staff.partial.foreign_data')
+                    </div>
+                    <div id="step_3" style="display: none">
+                        @include('staff.partial.labor_data')
+                    </div>
+                    <div id="step_4" style="display: none">
+                        @include('staff.partial.contract_assign')
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
 @endsection
 @section("footer-scripts")
-
     <script>
 
+        // Personal Data FOrm
+        $('#personal_form').submit(function (e) {
+            e.preventDefault();
+            let data = new FormData($('#personal_form')[0]);
+            let a = function () {
+                if (json.status === "Success") {
+                    $('#step_1').remove();
+                    $('#step_2').show();
+                }
+            }
+            let arr = [a];
+            call_ajax_with_functions("", "{{route('personal_form')}}", data, arr);
+        });
+
+        // let Foreign Data Form
+        $('#foreign_form').submit(function (e) {
+            e.preventDefault();
+            let data = new FormData($('#foreign_form')[0]);
+            let a = function () {
+                if (json.status === "Success") {
+                    $('#step_2').remove();
+                    $('#step_3').show();
+                }
+            }
+            let arr = [a];
+            call_ajax_with_functions("", "{{route('foreign_form')}}", data, arr);
+        });
+
+
+        // let labor Data Form
+        $('#labor_form').submit(function (e) {
+            e.preventDefault();
+            let data = new FormData($('#labor_form')[0]);
+            let a = function () {
+                if (json.status === "Success") {
+                    $('#step_3').remove();
+                    $('#step_4').show();
+                }
+            }
+            let arr = [a];
+            call_ajax_with_functions("", "{{route('labor_form')}}", data, arr);
+        });
     </script>
+
 @endsection

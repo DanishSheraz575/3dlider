@@ -9,3 +9,15 @@
     padding: 10px 30px;
     border-radius: 10px;
 }
+
+
+#upload_btn{
+    display: inline-block;
+    background-color: var(--dark-brown);
+    color: white;
+    padding: 0.5rem;
+    font-family: sans-serif;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}

@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Company;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Validator;
 
 class CompanyController extends Controller
 {
@@ -12,55 +14,50 @@ class CompanyController extends Controller
      */
     public function index()
     {
-        $data['page_title'] = "Company - 3d Lider";
+        $data['page_title'] = "Company - 3dlider";
+        $data['company'] = Company::where('added_by', Auth::user()->user_id)->first();
         return view('company.add_company',$data);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
+    public function save(Request $request)
     {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(Company $company)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Company $company)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, Company $company)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(Company $company)
-    {
-        //
+        $validator = Validator::make($request->all(), [
+            "country" => "required",
+            "department" => "required",
+            "city" => "required",
+            "address" => "required",
+            "phone" => "required",
+            "name" => "required",
+            "email" => "required|email",
+            "position" => "required",
+            "inspector_email" => "required|email",
+            "fund" => "required",
+        ]);
+        if($validator->passes()) {
+            $data = [
+                "country" => $request->country,
+                "department" => $request->department,
+                "city" => $request->city,
+                "address" => $request->address,
+                "phone" => $request->phone,
+                "name" => $request->name,
+                "email" => $request->email,
+                "position" => $request->position,
+                "inspector_email" => $request->inspector_email,
+                "fund" => $request->fund,
+                "added_by" => Auth::user()->user_id,
+            ];
+            if($request->company_id>0){
+                Company::where('company_id',$request->company_id)->update($data);
+            } else {
+                Company::Create($data);
+            }
+            $response['status'] = "Success";
+            $response['result'] = "Updated";
+        } else {
+            $response['status'] = "Failure!";
+            $response['result'] = $validator->errors()->toJson();
+        }
+        return response()->json($response);
     }
 }

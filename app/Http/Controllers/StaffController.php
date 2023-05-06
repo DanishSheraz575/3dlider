@@ -13,7 +13,7 @@ class StaffController extends Controller
     public function index()
     {
         $data['page_title'] = "Staff Management - 3d Lider";
-        return view('staff.add_staff',$data);
+        return view('staff.add_staff', $data);
     }
 
     /**
@@ -63,4 +63,26 @@ class StaffController extends Controller
     {
         //
     }
+
+    public function personal_form(Request $request)
+    {
+        $response['status'] = "Success";
+        $response['result'] = "Updated";
+        return response()->json($response);
+    }
+
+    public function foreign_form(Request $request)
+    {
+        $response['status'] = "Success";
+        $response['result'] = "Updated";
+        return response()->json($response);
+    }
+
+    public function labor_form(Request $request)
+    {
+        $response['status'] = "Success";
+        $response['result'] = "Updated";
+        return response()->json($response);
+    }
+
 }
