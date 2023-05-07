@@ -13,6 +13,9 @@ class StaffController extends Controller
     public function index()
     {
         $data['page_title'] = "Staff Management - 3d Lider";
+        $data['staff_list'] = Staff::where([
+            'status' => 1
+        ])->get();
         return view('staff.staff_list', $data);
     }
 
@@ -69,7 +72,8 @@ class StaffController extends Controller
                 //dd($data);
             }
             if($request->staff_id>0){
-                $staff = Staff::where('staff_id',$request->staff_id)->update($data);
+                Staff::where('staff_id',$request->staff_id)->update($data);
+                $staff = $request;
             } else {
                 $staff = Staff::Create($data);
             }

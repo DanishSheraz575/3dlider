@@ -121,14 +121,14 @@
                                                     <div class="controls">
                                                         <select name="fund" class="form-control" required>
                                                             <option selected disabled>Select Department</option>
-                                                            <option {{$company ? ($company->department=='Chuquisaca' ? 'selected' : '' ): ''}} value="Caja Nacional de Salud">Caja Nacional de Salud</option>
-                                                            <option {{$company ? ($company->department=='Caja de la Banca Privada' ? 'selected' : '' ): ''}} value="Caja de la Banca Privada">Caja de la Banca Privad</option>
-                                                            <option {{$company ? ($company->department=='SINEC' ? 'selected' : '' ): ''}} value="SINEC">SINEC</option>
-                                                            <option {{$company ? ($company->department=='Caja Serv. Nal. de Caminos' ? 'selected' : '' ): ''}} value="Caja Serv. Nal. de Caminos">Caja Serv. Nal. de Caminos</option>
-                                                            <option {{$company ? ($company->department=='COSMIL' ? 'selected' : '' ): ''}} value="COSMIL">COSMIL</option>
-                                                            <option {{$company ? ($company->department=='Seguro Universitario' ? 'selected' : '' ): ''}} value="Seguro Universitario">Seguro Universitario</option>
-                                                            <option {{$company ? ($company->department=='Caja de Saguapac' ? 'selected' : '' ): ''}} value="Caja de Saguapac">Caja de Saguapac</option>
-                                                            <option {{$company ? ($company->department=='Caja de Salud CORDES' ? 'selected' : '' ): ''}} value="Caja de Salud CORDES">Caja de Salud CORDES</option>
+                                                            <option {{$company ? ($company->fund=='Chuquisaca' ? 'selected' : '' ): ''}} value="Caja Nacional de Salud">Caja Nacional de Salud</option>
+                                                            <option {{$company ? ($company->fund=='Caja de la Banca Privada' ? 'selected' : '' ): ''}} value="Caja de la Banca Privada">Caja de la Banca Privad</option>
+                                                            <option {{$company ? ($company->fund=='SINEC' ? 'selected' : '' ): ''}} value="SINEC">SINEC</option>
+                                                            <option {{$company ? ($company->fund=='Caja Serv. Nal. de Caminos' ? 'selected' : '' ): ''}} value="Caja Serv. Nal. de Caminos">Caja Serv. Nal. de Caminos</option>
+                                                            <option {{$company ? ($company->fund=='COSMIL' ? 'selected' : '' ): ''}} value="COSMIL">COSMIL</option>
+                                                            <option {{$company ? ($company->fund=='Seguro Universitario' ? 'selected' : '' ): ''}} value="Seguro Universitario">Seguro Universitario</option>
+                                                            <option {{$company ? ($company->fund=='Caja de Saguapac' ? 'selected' : '' ): ''}} value="Caja de Saguapac">Caja de Saguapac</option>
+                                                            <option {{$company ? ($company->fund=='Caja de Salud CORDES' ? 'selected' : '' ): ''}} value="Caja de Salud CORDES">Caja de Salud CORDES</option>
                                                         </select>
                                                         <div class="help-block"></div>
                                                     </div>

@@ -8,7 +8,7 @@
                 <p class="card-text">Fields (*) are required</p>
             </div>
             <form class="form" id="personal_form">
-                {{$staff_data ? "<input type='hidden' name='staff_id' value='".$staff_data->staff_id."'/>" : ''}}
+                <?=$staff_data ? "<input type='hidden' name='staff_id' value='".$staff_data->staff_id."'/>" : ''?>
                 @csrf
                 <div class="form-body">
                     <h4 class="form-section mt-3"><i class="ft-user"></i> Personal information</h4>
@@ -100,8 +100,8 @@
                                         <div class="controls">
                                             <select id="is_foreign" name="is_foreign" class="form-control" required>
                                                 <option selected disabled>Please Select</option>
-                                                <option {{$staff_data ? ($staff_data->civil_status=='Yes' ? 'selected' : '') : ''}} value="Yes">Yes</option>
-                                                <option {{$staff_data ? ($staff_data->civil_status=='No' ? 'selected' : '') : ''}} value="No">No</option>
+                                                <option {{$staff_data ? ($staff_data->is_foreign=='Yes' ? 'selected' : '') : ''}} value="Yes">Yes</option>
+                                                <option {{$staff_data ? ($staff_data->is_foreign=='No' ? 'selected' : '') : ''}} value="No">No</option>
                                             </select>
                                         </div>
                                     </div>
@@ -116,7 +116,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <h5>Birthdate <span class="required">*</span></h5>
+                                        <h5>Birthdate <span class="required">* {{ $staff_data->dob}}</span></h5>
                                         <div class="controls">
                                             <input type="date" value="{{$staff_data ? $staff_data->dob: ''}}" name="dob" class="form-control" required>
                                         </div>
@@ -152,7 +152,7 @@
                             <div class="text-center">
                                 <h5><strong>Photo</strong></h5>
                                 <div class="pb-3">
-                                    <img id="blah" alt="your image" src="{{url('public/app-assets/img/img.png')}}" width="300" height="300"/>
+                                    <img id="blah" alt="your image" src="{{$staff_data ? url('public/images/staff/'.$staff_data->photo) : url('public/app-assets/img/img.png')}}" width="300" height="300"/>
                                 </div>
                                 <!--our custom file upload button-->
                                 <input  hidden id="upload" type="file" name="photo" onchange="document.getElementById('blah').src = window.URL.createObjectURL(this.files[0])">

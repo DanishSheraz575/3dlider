@@ -33,6 +33,10 @@
                 <li class="nav-item {{ (request()->is('staff')) ? 'active' : '' }}"><a href="{{route('staff')}}">
                         <i class="ft-users"></i><span data-i18n="" class="menu-title">Staff Management</span></a>
                 </li>
+                <li class="nav-item {{ (request()->is('vehicles')) ? 'active' : '' }}"><a href="{{route('vehicles')}}">
+                        <i class="fa fa-car" aria-hidden="true"></i>
+                        <span data-i18n="" class="menu-title">Vehicles Management</span></a>
+                </li>
                 {{--<li class="nav-item {{ (request()->is('customer_list')) ? 'active' : '' }}"><a href="{{route('customer_list')}}"><i class="icon-users"></i><span data-i18n="" class="menu-title">Customers</span><span class="tag badge badge-pill badge-danger float-right mr-1 mt-1" id="customer_unread_count"></span></a>
                 </li>
                 <li class="has-sub nav-item {{ (request()->is('inbox')) ? 'nav-collapse-open active' : '' }}

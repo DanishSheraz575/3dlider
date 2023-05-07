@@ -24,6 +24,13 @@
     <link rel="stylesheet" type="text/css" href="{{asset('public/app-assets/vendors/css/prism.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('public/app-assets/vendors/css/chartist.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('public/app-assets/vendors/css/sweetalert2.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('public/app-assets/vendors/css/tables/datatable/dataTables.bootstrap4.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('public/app-assets/vendors/css/tables/datatable/datatables.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('public/app-assets/vendors/css/tables/datatable/jquery.dataTables.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('public/app-assets/vendors/css/tables/datatable/responsive.dataTables.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('public/app-assets/vendors/css/tables/datatable/select.dataTables.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('public/app-assets/vendors/css/tables/datatable/buttons.bootstrap4.min.css')}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-datepicker@1.9.0/dist/css/bootstrap-datepicker3.min.css" rel="stylesheet">
 
     {{--Header Page Scripts--}}
     <!-- BEGIN APEX CSS-->
@@ -81,6 +88,17 @@
 <script src="{{asset('public/app-assets/vendors/js/sweetalert2.min.js')}}" type="text/javascript"></script>
 <script src="{{asset('public/app-assets/js/sweet-alerts.js')}}" type="text/javascript"></script>
 <script src="{{asset('public/app-assets/js/ajax.js')}}" type="text/javascript"></script>
+
+<script src="{{asset('public/app-assets/vendors/js/datatable/datatables.min.js')}}" type="text/javascript"></script>
+<script src="{{asset('public/app-assets/vendors/js/datatable/dataTables.buttons.min.js')}}" type="text/javascript"></script>
+<script src="{{asset('public/app-assets/vendors/js/datatable/buttons.flash.min.js')}}" type="text/javascript"></script>
+<script src="{{asset('public/app-assets/vendors/js/datatable/jszip.min.js')}}" type="text/javascript"></script>
+<script src="{{asset('public/app-assets/vendors/js/datatable/pdfmake.min.js')}}" type="text/javascript"></script>
+<script src="{{asset('public/app-assets/vendors/js/datatable/vfs_fonts.js')}}" type="text/javascript"></script>
+<script src="{{asset('public/app-assets/vendors/js/datatable/buttons.html5.min.js')}}" type="text/javascript"></script>
+<script src="{{asset('public/app-assets/vendors/js/datatable/buttons.print.min.js')}}" type="text/javascript"></script>
+<script src="{{asset('public/app-assets/js/data-tables/datatable-advanced.js')}}" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-datepicker@1.9.0/dist/js/bootstrap-datepicker.min.js"></script>
 {{--Footer Page Scripts--}}
 @yield("footer-scripts")
 </body>

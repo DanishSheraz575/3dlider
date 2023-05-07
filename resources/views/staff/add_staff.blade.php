@@ -85,7 +85,6 @@
                         let json = JSON.parse(request.responseText);
                         if(json.status=='Success'){
                             swal("Success", "Saved", "success");
-                            $('#staff_id').val(json.result);
                             $('#step_2').hide();
                             $('#step_3').show();
                         } else{

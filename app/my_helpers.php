@@ -28,6 +28,14 @@ if (!function_exists('get_time')) {
         return $datetime->format('H:i:s');
     }
 }
+// parse date to for db
+if (!function_exists('parse_date_store')) {
+    function parse_date_store($date)
+    {
+        return date('Y-m-d', strtotime($date));
+    }
+}
+
 // Add notification
 if (!function_exists('send_email')) {
     function send_email($email_body, $email_address, $subject)

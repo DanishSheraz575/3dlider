@@ -45,6 +45,7 @@ Route::middleware(\App\Http\Middleware\EnsureLogin::class)->group(function () {
     Route::controller(App\Http\Controllers\StaffController::class)->group(function () {
         Route::get('/staff', 'index')->name('staff');
         Route::get('staff_form','staff_form')->name('staff_form');
+        Route::get('staff_form/{id}','staff_form')->name('staff_form_edit');
         Route::post('personal_form','personal_form')->name('personal_form');
         Route::post('foreign_form','foreign_form')->name('foreign_form');
         Route::post('labor_form','labor_form')->name('labor_form');
@@ -54,9 +55,19 @@ Route::middleware(\App\Http\Middleware\EnsureLogin::class)->group(function () {
 //   Vehicles::
     Route::controller(App\Http\Controllers\VehiclesController::class)->group(function () {
         Route::get('/vehicles', 'index')->name('vehicles');
-        Route::get('/Vehicle_form', 'Vehicle_form')->name('Vehicle_form');
+        Route::get('/Vehicle_form', 'vehicle_form')->name('vehicle_form');
         Route::post('vehicle_features','vehicle_features')->name('vehicle_features');
         Route::post('technical_inspection','technical_inspection')->name('technical_inspection');
+    });
+
+
+    //   Contracts
+    Route::controller(App\Http\Controllers\ContractorsController::class)->group(function () {
+        Route::get('/contractor', 'index')->name('contractor');
+        Route::get('/contractor_form', 'contractor_form')->name('contractor_form');
+        Route::get('/contractor_form/{id}', 'contractor_form')->name('contractor_form_edit');
+        Route::post('/save_contract','save_contract')->name('save_contract');
+        Route::post('/delete_contract','delete_contract')->name('delete_contract');
     });
 
 });
