@@ -10,7 +10,7 @@
                                 <div class="card">
                                     <div class="card-header d-flex justify-content-between">
                                         <h4 class="card-title">All your staff</h4>
-                                        <a href="{{route('Vehicle_form')}}" class="main_btn">Add Vehicle</a>
+                                        <a href="{{route('vehicle_form')}}" class="main_btn">Add Vehicle</a>
                                     </div>
                                     <div class="card-content ">
                                         <div class="card-body card-dashboard table-responsive">

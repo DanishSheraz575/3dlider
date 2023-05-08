@@ -52,14 +52,13 @@ Route::middleware(\App\Http\Middleware\EnsureLogin::class)->group(function () {
 
     });
 
-//   Vehicles::
+    //   Vehicles::
     Route::controller(App\Http\Controllers\VehiclesController::class)->group(function () {
         Route::get('/vehicles', 'index')->name('vehicles');
-        Route::get('/Vehicle_form', 'vehicle_form')->name('vehicle_form');
+        Route::get('/vehicle_form', 'vehicle_form')->name('vehicle_form');
         Route::post('vehicle_features','vehicle_features')->name('vehicle_features');
         Route::post('technical_inspection','technical_inspection')->name('technical_inspection');
     });
-
 
     //   Contracts
     Route::controller(App\Http\Controllers\ContractorsController::class)->group(function () {
